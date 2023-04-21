@@ -232,7 +232,10 @@ make_bg_svg <- function(text) {
     "background-image:url(\"data:image/svg+xml;base64,%s\");",
     svg
   )
-  paste0(svg, "background-color:white; background-repeat:no-repeat; background-position:right bottom;")
+  paste0(
+    svg,
+    # background-color:white;
+    "background-repeat:no-repeat; background-position:right bottom;")
 }
 
 
